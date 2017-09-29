@@ -1,6 +1,6 @@
 exports.config = {
   bundles: [
-    { components: ['my-name'] }
+    { components: ['bs-pagination'] }
   ],
   collections: [
     { name: '@stencil/router' }
