@@ -1,0 +1,32 @@
+{
+  "name": "wc-bootstrap",
+  "version": "0.0.1",
+  "description": "Web Components for Bootstrap",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --prerender",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@stencil/core": "next",
+    "@stencil/router": "latest"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/utils": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlaval/wc-bootstrap.git"
+  },
+  "author": "Marc Laval",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlaval/wc-bootstrap"
+  },
+  "homepage": "https://github.com/mlaval/wc-bootstrap"
+}
