@@ -13,7 +13,9 @@
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "test": "sd concurrent \"stencil build --dev --watch\" \"karma start\" ",
+    "ci": "karma start --single-run"
   },
   "dependencies": {
     "@stencil/core": "next",
@@ -21,8 +23,14 @@
     "@ng-bootstrap/ng-bootstrap": "1.0.0-beta.5"
   },
   "devDependencies": {
+    "@types/jasmine": "2.6.0",
     "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest"
+    "@stencil/utils": "latest",
+    "jasmine": "2.8.0",
+    "karma": "1.7.1",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-jasmine": "1.1.0",
+    "karma-typescript": "3.0.7"
   },
   "repository": {
     "type": "git",
