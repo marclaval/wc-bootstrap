@@ -1,9 +1,8 @@
 exports.config = {
+  namespace: 'wcbs',
+  generateDistribution: true,
   bundles: [
     { components: ['bs-pagination'] }
-  ],
-  collections: [
-    { name: '@stencil/router' }
   ]
 };
 
